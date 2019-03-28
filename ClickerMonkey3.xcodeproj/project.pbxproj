@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		571E1004224C601100C3B518 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E1003224C601100C3B518 /* File.swift */; };
+		571E1006224C62CE00C3B518 /* monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 571E1005224C62CE00C3B518 /* monkey.png */; };
+		571E1008224C635E00C3B518 /* monkeyflip.png in Resources */ = {isa = PBXBuildFile; fileRef = 571E1007224C635E00C3B518 /* monkeyflip.png */; };
+		57904CA1224C5E32007726A0 /* Monkey.sks in Resources */ = {isa = PBXBuildFile; fileRef = 57904CA0224C5E32007726A0 /* Monkey.sks */; };
 		EDA083B82243283D0000D3F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA083B72243283D0000D3F5 /* AppDelegate.swift */; };
 		EDA083BA2243283D0000D3F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA083B92243283D0000D3F5 /* ViewController.swift */; };
 		EDA083BD2243283D0000D3F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA083BB2243283D0000D3F5 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		571E1003224C601100C3B518 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		571E1005224C62CE00C3B518 /* monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = monkey.png; path = ../../../Desktop/monkey.png; sourceTree = "<group>"; };
+		571E1007224C635E00C3B518 /* monkeyflip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monkeyflip.png; sourceTree = "<group>"; };
+		57904CA0224C5E32007726A0 /* Monkey.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Monkey.sks; sourceTree = "<group>"; };
 		EDA083B42243283D0000D3F5 /* ClickerMonkey3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickerMonkey3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA083B72243283D0000D3F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDA083B92243283D0000D3F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +64,10 @@
 			children = (
 				EDA083B72243283D0000D3F5 /* AppDelegate.swift */,
 				EDA083B92243283D0000D3F5 /* ViewController.swift */,
+				57904CA0224C5E32007726A0 /* Monkey.sks */,
+				571E1003224C601100C3B518 /* File.swift */,
+				571E1007224C635E00C3B518 /* monkeyflip.png */,
+				571E1005224C62CE00C3B518 /* monkey.png */,
 				EDA083BB2243283D0000D3F5 /* Main.storyboard */,
 				EDA083BE2243283E0000D3F5 /* Assets.xcassets */,
 				EDA083C02243283E0000D3F5 /* LaunchScreen.storyboard */,
@@ -122,6 +134,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				571E1006224C62CE00C3B518 /* monkey.png in Resources */,
+				571E1008224C635E00C3B518 /* monkeyflip.png in Resources */,
+				57904CA1224C5E32007726A0 /* Monkey.sks in Resources */,
 				EDA083C22243283E0000D3F5 /* LaunchScreen.storyboard in Resources */,
 				EDA083BF2243283E0000D3F5 /* Assets.xcassets in Resources */,
 				EDA083BD2243283D0000D3F5 /* Main.storyboard in Resources */,
@@ -136,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDA083BA2243283D0000D3F5 /* ViewController.swift in Sources */,
+				571E1004224C601100C3B518 /* File.swift in Sources */,
 				EDA083B82243283D0000D3F5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
