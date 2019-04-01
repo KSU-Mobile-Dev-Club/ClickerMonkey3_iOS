@@ -40,14 +40,7 @@ class ViewController: UIViewController {
             
             //this tells the node count of the view, nodes are the highest class order of things you  can put into an SKView, In our case, we used SKSpriteNodes
             view.showsNodeCount = true
-            
-            
-            
         }
-        
-        
-        
-        
     }
     }
 

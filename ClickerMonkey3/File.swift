@@ -8,6 +8,7 @@
 
 import Foundation
 import SpriteKit
+import Firebase
 
 
 class scene: SKScene {
@@ -22,6 +23,7 @@ class scene: SKScene {
     var retry = SKLabelNode()
     var retryBack = SKSpriteNode()
     var x = SKLabelNode()
+    
     override func didMove(to view: SKView) {
         timerLabel = self.childNode(withName: "timerLabel") as! SKLabelNode
         monkey = self.childNode(withName: "monkey") as! SKSpriteNode
@@ -31,8 +33,7 @@ class scene: SKScene {
         retryBack.alpha = 0
         retry.alpha = 0
         x = self.childNode(withName: "count") as! SKLabelNode
-
-        
+        x.text = "Click me!"
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -41,16 +42,15 @@ class scene: SKScene {
             if monkey.contains(touch.location(in: self)) && retryBack.alpha == 0 {
                 start = true
             }
+            
             if start {
-                
                 if !started {
                     relativeTime = time
                     started = true
                     x.text = "Count \(0)"
-
                 }
             
-            if monkey.contains(touch.location(in: self)) ?? false {
+            if monkey.contains(touch.location(in: self)) {
                 
                 count += 1
                 x.text = "Count \(count)"
@@ -63,6 +63,7 @@ class scene: SKScene {
                 }
             }
         }
+            
             if retryBack.contains(touch.location(in: self)) {
                 retryBack.alpha = 0
                 retry.alpha = 0
@@ -85,12 +86,40 @@ class scene: SKScene {
             started = false
             retryBack.alpha = 1
             retry.alpha = 1
-            count = 0
+            // send score to leaderboard
+            recordScore()
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 // do stuff 42 seconds later
             }
-            
         }
         time = currentTime
+    }
+    
+    
+    func recordScore() {
+        // prompt the user for their name
+        let prompt = UIAlertController(title: "What's your name?", message: nil, preferredStyle: .alert)
+        
+        prompt.addTextField(configurationHandler: { textField in
+            textField.placeholder = "Input your name here..."
+        })
+        
+        prompt.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            if let name = prompt.textFields?.first?.text {
+                print("Your name: \(name)")
+                self.uploadScore(of: name, with: self.count)
+            }
+            self.count = 0
+        }))
+        
+        // show the alert
+        self.view?.window?.rootViewController?.present(prompt, animated: true, completion: nil)
+    }
+    
+    func uploadScore(of player : String, with score : Int) {
+        print(score)
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        ref.child("scores").child(player).setValue(score)
     }
 }

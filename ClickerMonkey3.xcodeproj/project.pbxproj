@@ -11,6 +11,8 @@
 		571E1006224C62CE00C3B518 /* monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 571E1005224C62CE00C3B518 /* monkey.png */; };
 		571E1008224C635E00C3B518 /* monkeyflip.png in Resources */ = {isa = PBXBuildFile; fileRef = 571E1007224C635E00C3B518 /* monkeyflip.png */; };
 		57904CA1224C5E32007726A0 /* Monkey.sks in Resources */ = {isa = PBXBuildFile; fileRef = 57904CA0224C5E32007726A0 /* Monkey.sks */; };
+		5B023C2D00A83B7F2F3A7BF5 /* Pods_ClickerMonkey3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14217A9149FDAA299DA5C1B /* Pods_ClickerMonkey3.framework */; };
+		ED18061C22517DCB003E34A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED18061B22517DCB003E34A1 /* GoogleService-Info.plist */; };
 		EDA083B82243283D0000D3F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA083B72243283D0000D3F5 /* AppDelegate.swift */; };
 		EDA083BA2243283D0000D3F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA083B92243283D0000D3F5 /* ViewController.swift */; };
 		EDA083BD2243283D0000D3F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA083BB2243283D0000D3F5 /* Main.storyboard */; };
@@ -19,10 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		158DF5E73B53EEF0FDBEAC33 /* Pods-ClickerMonkey3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerMonkey3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerMonkey3/Pods-ClickerMonkey3.debug.xcconfig"; sourceTree = "<group>"; };
+		2763824BBC69F6FA6B4E1284 /* Pods-ClickerMonkey3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerMonkey3.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerMonkey3/Pods-ClickerMonkey3.release.xcconfig"; sourceTree = "<group>"; };
 		571E1003224C601100C3B518 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		571E1005224C62CE00C3B518 /* monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = monkey.png; path = ../../../Desktop/monkey.png; sourceTree = "<group>"; };
 		571E1007224C635E00C3B518 /* monkeyflip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monkeyflip.png; sourceTree = "<group>"; };
 		57904CA0224C5E32007726A0 /* Monkey.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Monkey.sks; sourceTree = "<group>"; };
+		D14217A9149FDAA299DA5C1B /* Pods_ClickerMonkey3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickerMonkey3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED18061B22517DCB003E34A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EDA083B42243283D0000D3F5 /* ClickerMonkey3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickerMonkey3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA083B72243283D0000D3F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDA083B92243283D0000D3F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B023C2D00A83B7F2F3A7BF5 /* Pods_ClickerMonkey3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A7B7D98405DA30DEC5E79D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				158DF5E73B53EEF0FDBEAC33 /* Pods-ClickerMonkey3.debug.xcconfig */,
+				2763824BBC69F6FA6B4E1284 /* Pods-ClickerMonkey3.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B10BA492BB48483E0CEF427A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D14217A9149FDAA299DA5C1B /* Pods_ClickerMonkey3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EDA083AB2243283D0000D3F5 = {
 			isa = PBXGroup;
 			children = (
 				EDA083B62243283D0000D3F5 /* ClickerMonkey3 */,
 				EDA083B52243283D0000D3F5 /* Products */,
+				ED18061B22517DCB003E34A1 /* GoogleService-Info.plist */,
+				5A7B7D98405DA30DEC5E79D7 /* Pods */,
+				B10BA492BB48483E0CEF427A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDA083C62243283E0000D3F5 /* Build configuration list for PBXNativeTarget "ClickerMonkey3" */;
 			buildPhases = (
+				736D152FBAC955D67E45974F /* [CP] Check Pods Manifest.lock */,
 				EDA083B02243283D0000D3F5 /* Sources */,
 				EDA083B12243283D0000D3F5 /* Frameworks */,
 				EDA083B22243283D0000D3F5 /* Resources */,
+				22EEC53C4452EE3AB601EE62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,10 +169,62 @@
 				EDA083C22243283E0000D3F5 /* LaunchScreen.storyboard in Resources */,
 				EDA083BF2243283E0000D3F5 /* Assets.xcassets in Resources */,
 				EDA083BD2243283D0000D3F5 /* Main.storyboard in Resources */,
+				ED18061C22517DCB003E34A1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22EEC53C4452EE3AB601EE62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ClickerMonkey3/Pods-ClickerMonkey3-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClickerMonkey3/Pods-ClickerMonkey3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		736D152FBAC955D67E45974F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClickerMonkey3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EDA083B02243283D0000D3F5 /* Sources */ = {
@@ -296,6 +377,7 @@
 		};
 		EDA083C72243283E0000D3F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 158DF5E73B53EEF0FDBEAC33 /* Pods-ClickerMonkey3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +396,7 @@
 		};
 		EDA083C82243283E0000D3F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2763824BBC69F6FA6B4E1284 /* Pods-ClickerMonkey3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
